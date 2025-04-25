@@ -35,7 +35,6 @@ public class Main {
 
         System.out.println("---Dados do Funcionário---");
         A.MostrarDados();
-        A.BaterPonto();
 
         if (A instanceof Gerente) {
             ((Gerente) A).RealizarReuniao();
@@ -44,6 +43,8 @@ public class Main {
         } else if (A instanceof Estagiario) {
             ((Estagiario) A).fazerTarefa();
         }
+
+        A.BaterPonto();
 
         scanner.close();
 
